@@ -28,7 +28,7 @@
         });
     </script>
 
-    @inject('eleganHelper', 'Labi9\Elegan\EleganHelper')
+    @inject('eleganHelper', 'Labi9\Elegan\Src\EleganHelper')
 
     <h2 id="patch-notes">Notas de atualização</h2>
 
@@ -37,6 +37,15 @@
     @empty
         <p>Sem notas de atualização</p>
     @endforelse
+
+    <footer>
+        <div>
+            <p>
+                Desenvolvido por <a href="https://labi9.com/"><span>LABI9</span> - Tecnologia da Informação
+            </p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
