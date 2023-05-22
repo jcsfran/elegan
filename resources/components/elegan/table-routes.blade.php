@@ -1,13 +1,13 @@
-<table class="patch-note-table">
+<table class="patch-notes-content-routes">
     <tr>
         <th>
-            Descrição
+            Decription
         </th>
         <th>
-            Ação
+            Action
         </th>
         <th>
-            Método
+            Method
         </th>
         <th>
             Endpoint
@@ -20,7 +20,7 @@
             @endphp
         @else
             @php
-                $description = '';
+                $description = '---';
             @endphp
         @endif
 
@@ -30,7 +30,7 @@
             @endphp
         @else
             @php
-                $action = '';
+                $action = '---';
             @endphp
         @endif
 
@@ -40,7 +40,7 @@
             @endphp
         @else
             @php
-                $method = '';
+                $method = '---';
             @endphp
         @endif
 
@@ -50,10 +50,10 @@
             @endphp
         @else
             @php
-                $endpoint = '';
+                $endpoint = '---';
             @endphp
         @endif
 
-        <x-patch-note.table-tr :description="$description" :action="$action" :method="$method" :endpoint="$endpoint" />
+        <x-elegan.routes :description="$description" :action="$action" :method="$method" :endpoint="$endpoint" />
     @endforeach
 </table>
